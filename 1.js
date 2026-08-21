@@ -86,6 +86,16 @@ $(document).on('keydown', function(e) {
 
     $('body').append(popup);
 
+$('#popup-links').on('click', 'a', function() {
+    const name = $(this).data('clicky');
+
+    clicky.log(
+        '/out/' + name,
+        name.charAt(0).toUpperCase() + name.slice(1),
+        'pageview'
+    );
+});
+    
     $(document).on('click', function(event) {
         if (!$(event.target).closest('#popup-links, #links').length) {
             popup.hide();
