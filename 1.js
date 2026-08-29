@@ -138,10 +138,10 @@ $('#links').on('click', function(event) {
                     src: '/pics/2.jpg', // Image 2
                     type: 'image'
                 },
-                {
-                    src: '/pics/3.jpg', // Image 3
-                    type: 'image'
-                },
+              //  {
+                 //   src: '/pics/3.jpg', // Image 3
+               //     type: 'image'
+              //  },
                 {
                     src: '/pics/4.jpg', // Image 4
                     type: 'image'
